@@ -120,14 +120,29 @@ font-size: 16px;
 line-height: 1.5;
 color: var(--main-text-color);
 letter-spacing: 0.02em;
-
 box-sizing: border-box;
+transition-duration: 250ms;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .nav-link:hover,
 .nav-link:focus {
 color: var(--nav-list-color);
 
+}
+
+.current-postn {
+   position: relative;
+}
+.current-postn::after {
+position: absolute;
+content: '';
+left: 0;
+bottom: -28px;
+background-color: #404BBF;
+width: 100%;
+height: 4px;
+border-radius: 2px;
 }
 
 
@@ -153,6 +168,8 @@ color: var(--nav-list-color);
 font-size: 16px;
 line-height: 1.5;
 color: var(--contacts-color);
+transition-duration: 250ms;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
 }
   .contact:hover,
   .contact:focus {
@@ -200,7 +217,8 @@ background-color: var(--button-centr-color-blue);
 padding: 16px 32px;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
-
+transition-duration: 250ms;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
 }
    .button-style:hover,
    .button-style:focus {
@@ -371,6 +389,8 @@ height: 40px;
 border: 1px transparent;
 border-radius: 50%;
 background-color: var(--button-color-blue-portf);
+transition-duration: 250ms;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .svg-socnetwork {
@@ -427,6 +447,8 @@ border-radius: 4px;
 display: flex;
 align-items: center;
 justify-content: center;
+transition-duration: 250ms;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
 }
 .svg-customers {
    width: 104px;
@@ -518,6 +540,8 @@ border: 1px transparent;
 color: var(--button-color-white-portf);
 border-radius: 50%;
 background-color: rgba(255, 255, 255, 0.1);
+transition-duration: 250ms;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
 }
 .svg-soc-media {
 fill: currentColor;
@@ -573,7 +597,8 @@ background-color: var(--button-color-white-portf);
 padding: 12px 24px;
 border: 1px solid #E7E9FC;
 border-radius: 4px;
-
+transition-duration: 250ms;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .button-portf:hover,
@@ -603,6 +628,10 @@ flex-wrap: wrap;
 background: var(--background-color-white);
    }
 
+ .cards-shadow {
+   transition-duration: 250ms;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+ }
 .cards-shadow:hover,
 .cards-shadow:focus {
 display: block;
