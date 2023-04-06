@@ -122,7 +122,7 @@ color: var(--main-text-color);
 letter-spacing: 0.02em;
 box-sizing: border-box;
 transition-duration: 250ms;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -169,7 +169,7 @@ font-size: 16px;
 line-height: 1.5;
 color: var(--contacts-color);
 transition-duration: 250ms;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
   .contact:hover,
   .contact:focus {
@@ -218,7 +218,7 @@ padding: 16px 32px;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 transition-duration: 250ms;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
    .button-style:hover,
    .button-style:focus {
@@ -390,7 +390,7 @@ border: 1px transparent;
 border-radius: 50%;
 background-color: var(--button-color-blue-portf);
 transition-duration: 250ms;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg-socnetwork {
@@ -448,7 +448,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 transition-duration: 250ms;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-customers {
    width: 104px;
@@ -541,7 +541,7 @@ color: var(--button-color-white-portf);
 border-radius: 50%;
 background-color: rgba(255, 255, 255, 0.1);
 transition-duration: 250ms;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-soc-media {
 fill: currentColor;
@@ -598,7 +598,7 @@ padding: 12px 24px;
 border: 1px solid #E7E9FC;
 border-radius: 4px;
 transition-duration: 250ms;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-portf:hover,
@@ -629,14 +629,45 @@ background: var(--background-color-white);
    }
 
  .cards-shadow {
-   transition-duration: 250ms;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+transition-duration: 250ms;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
  }
-.cards-shadow:hover,
-.cards-shadow:focus {
+
+.cards-item:hover .cards-shadow,
+.cards-item:focus .cards-shadow {
 display: block;
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+
 }
+
+.cards-anime-cover {
+   position: relative;
+   overflow: hidden;
+  
+}
+.cards-anime-text {
+   padding: 40px 32px;
+   text-align: left;
+   height: 100%;
+   position: absolute;
+   top: 0;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+color: #F4F4FD;
+letter-spacing: 0.02em;
+   background-color: #4D5AE5;
+   mix-blend-mode: normal;
+   transform: translateY(100%);
+transition-duration: 250ms;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cards-item:hover .cards-anime-text {
+      transform: translateY(0);
+}
+
 
 /* .section-project-cards {
 } */
