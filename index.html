@@ -41,7 +41,7 @@
       <section class="section-banner">
         <div class="container"> 
         <h1 class="site-banner">Effective Solutions for Your Business</h1>
-        <button type="button" class="button-style">order service</button>
+        <button type="button" class="button-style" data-modal-open>order service</button>
                 </div>
       </section>
 
@@ -298,5 +298,18 @@
 
     </div>
     </footer>
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="btn-cls-modal" data-modal-close>
+        <a href="">
+          <svg class="svg-btn-cls"><use href="./images/modal-btn-svg/modal-btn-cls-svg.svg#icon-modal-btn-cls-svg-opt"></use></svg>
+        </a>
+      </button>
+    </div>
+  </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
+
