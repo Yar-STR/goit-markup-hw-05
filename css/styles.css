@@ -192,7 +192,7 @@ padding: 188px 0;
 background-position: 50% 50%;
 background-repeat: no-repeat;
 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
-width: 1440px;
+max-width: 1440px;
 margin: 0 auto;
 }
 
@@ -444,7 +444,7 @@ justify-content: space-between;
 } */
 
 .customer-item-link {
-   margin: 0px;
+margin: 0px;
 padding: 0px;
 width: 168px;
 height: 88px;
@@ -454,7 +454,7 @@ border-radius: 4px;
 display: flex;
 align-items: center;
 justify-content: center;
-transition-property: border, border-radius, color;
+transition-property: border, color;
 transition-duration: 250ms;
 transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -467,7 +467,6 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 .customer-item-link:hover,
 .customer-item-link:focus {
 border: 1px solid #404BBF;
-border-radius: 4px;
 color: #404BBF;
 
 }
@@ -744,7 +743,7 @@ opacity: 0;
 }
 
 .btn-cls-modal {
-     padding: 0;
+   padding: 0;
    margin-left: auto;
  display: flex;
 justify-content: center;
@@ -754,12 +753,22 @@ align-items: center;
    border-radius: 50%;
    border: 1px solid rgba(0, 0, 0, 0.1);
    background-color: #E7E9FC;
+   cursor: pointer;
+   color: #2E2F42;
+   transition-duration: 250ms;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg-btn-cls  {
  display: flex;
 justify-content: center;
 align-items: center;
-    width: 8px;
-   height: 8px;
-   }
+width: 8px;
+height: 8px;
+
+       }
+.btn-cls-modal:hover {
+   background-color: #404BBF;
+   fill: #FFFFFF;
+      }
+ 
